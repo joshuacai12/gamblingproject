@@ -5,12 +5,7 @@ Welcome! This a web application that was built to assess a person's tendency to 
 
 ## Description
 
-In order to access the project, you must cd into our project folder titled "final project". Once you are there, you will have to type
-the command "flask run" into the command line in order to start the project, since our project was made using flask. Once "flask run"
-is typed into the command line, the program should start running, and then a link should pop up. Click that link to enter the website
-that we built. Once you enter the website, you should see a website called "Gambling Successfully", where there should be a page with
-animated slot machines as a background, a menu at the top of the page with a "Home" button and a dropdown menu with the buttons "Questions"
-and "Resources".
+
 
 There should be a button in the middle of the page with the text "Start Questions". Click on that button, and you
 should see a page of true/false questions that will be geared towards whether you have the tendencies to be a compulsive gambler.
