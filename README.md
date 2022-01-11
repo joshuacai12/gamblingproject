@@ -1,5 +1,10 @@
 # gamblingproject
 
+
+Welcome! This a web application that was built to assess a person's tendency to be a compulsive gambler. 
+
+## Description
+
 In order to access the project, you must cd into our project folder titled "final project". Once you are there, you will have to type
 the command "flask run" into the command line in order to start the project, since our project was made using flask. Once "flask run"
 is typed into the command line, the program should start running, and then a link should pop up. Click that link to enter the website
