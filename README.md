@@ -1,7 +1,7 @@
 # gamblingproject
 
 
-Welcome! This a web application that was built to assess a person's tendency to be a compulsive gambler. 
+Welcome! This is a web application that was built to assess a person's tendency to be a compulsive gambler. 
 
 ## Description
 
