@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Low
+{% endblock %}
+
+{% block main %}
+<!-- Outputs text feedback about user's condition -->
+<div class="directioncontainer">
+    <h3>Results: Healthy</h3>
+    <h6>You are exhibiting safe behavior. Continuing to practice this behavior will help prevent substantially negative outcomes.</h6>
+</div>
+
+<hr>
+
+<div class="container mt-5">
+    <div class="card" style="border-color: black;">
+        <div class="row no-gutters">
+            <div class="col-md-4 border-right">
+                <!-- Outputs rating -->
+                <div class="ratings text-center p-4 py-5"> <span class="badge bg-success">{{ person_data_number }} / 9 <i class="fa fa-star-o"></i></span> <span class="d-block about-rating">Low Tendency</span> <span class="d-block total-ratings"></span> </div>
+            </div>
+            <div class="col-md-8">
+                <!-- Outputs scale -->
+                <div class="rating-progress-bars p-3">
+                    <div class="progress-1 align-items-center">
+                        <div class="progress" style="height: 5.5rem;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: {{ percent }};" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"> {{ percent }} </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

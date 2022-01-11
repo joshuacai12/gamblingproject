@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Questions
+{% endblock %}
+
+{% block main %}
+
+            <div class="directioncontainer">
+                <h3>Directions</h3>
+                <h6>Please select true or false for the following nine questions. Press submit when complete.</h6>
+            </div>
+
+        <form action="/questions" method="post">
+                <!-- Question number one. -->
+                <div class="section1">
+                    <h2 class="question_title">&nbsp;Question 1</h2>
+                    <h3>&nbsp;Have you bet more than you could really afford to lose?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true1" class="question_checkbox" name="radio1" value="true" required="required">
+                    <label class="question_checkbox_label" for="true1">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false1" class="question_checkbox" name="radio1" value="false" required="required">
+                    <label class="question_checkbox_label" for="false1">False</label>
+                    <p id="feedback1"></p>
+                </div>
+
+
+                <!-- Question number two. -->
+                <div class="section2">
+                    <h2 class="question_title">&nbsp;Question 2</h2>
+                    <h3>&nbsp;Have you felt the need to gamble with increasingly larger amounts of money to get the same satisfaction from gambling?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true2" class="question_checkbox" name="radio2" value="true" required="required">
+                    <label class="question_checkbox_label" for="true2">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false2" class="question_checkbox" name="radio2" value="false" required="required">
+                    <label class="question_checkbox_label" for="false2">False</label>
+                    <p id="feedback2"></p>
+                </div>
+
+                <!-- Question number three. -->
+                <div class="section3">
+                    <h2 class="question_title">&nbsp;Question 3</h2>
+                    <h3>&nbsp;Have you gone back on another day to win back the money you have lost?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true3" class="question_checkbox" name="radio3" value="true" required="required">
+                    <label class="question_checkbox_label" for="true3">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false3" class="question_checkbox" name="radio3" value="false" required="required">
+                    <label class="question_checkbox_label" for="false3">False</label>
+                    <p id="feedback3"></p>
+                </div>
+
+                <!-- Question number four. -->
+                <div class="section4">
+                    <h2 class="question_title">&nbsp;Question 4</h2>
+                    <h3>&nbsp;Have you borrowed money or sold anything to gamble?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true4" class="question_checkbox" name="radio4" value="true" required="required">
+                    <label class="question_checkbox_label" for="true4">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false4" class="question_checkbox" name="radio4" value="false" required="required">
+                    <label class="question_checkbox_label" for="false4">False</label>
+                    <p id="feedback4"></p>
+                </div>
+
+                <!-- Question number five. -->
+                <div class="section5">
+                    <h2 class="question_title">&nbsp;Question 5</h2>
+                    <h3>&nbsp;Have you felt that you might have a problem with gambling?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true5" class="question_checkbox" name="radio5" value="true" required="required">
+                    <label class="question_checkbox_label" for="true5">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false5" class="question_checkbox" name="radio5" value="false" required="required">
+                    <label class="question_checkbox_label" for="false5">False</label>
+                    <p id="feedback5"></p>
+                </div>
+
+                <!-- Question number six. -->
+                <div class="section6">
+                    <h2 class="question_title">&nbsp;Question 6</h2>
+                    <h3>&nbsp;Have people criticized your betting or told you that you had a gambling problem, whether or not you thought it was true?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true6" class="question_checkbox" name="radio6" value="true" required="required">
+                    <label class="question_checkbox_label" for="true6">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false6" class="question_checkbox" name="radio6" value="false" required="required">
+                    <label class="question_checkbox_label" for="false6">False</label>
+                    <p id="feedback6"></p>
+                </div>
+
+                <!-- Question number seven. -->
+                <div class="section7">
+                    <h2 class="question_title">&nbsp;Question 7</h2>
+                    <h3>&nbsp;Have you felt guilty about the way you gamble or what happens when you gamble?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true7" class="question_checkbox" name="radio7" value="true" required="required">
+                    <label class="question_checkbox_label" for="true7">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false7" class="question_checkbox" name="radio7" value="false" required="required">
+                    <label class="question_checkbox_label" for="false7">False</label>
+                    <p id="feedback7"></p>
+                </div>
+
+                <!-- Question number eight. -->
+                <div class="section8">
+                    <h2 class="question_title">&nbsp;Question 8</h2>
+                    <h3>&nbsp;Has gambling caused you any health problems, including stress or anxiety?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true8" class="question_checkbox" name="radio8" value="true" required="required">
+                    <label class="question_checkbox_label" for="true8">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false8" class="question_checkbox" name="radio8" value="false" required="required">
+                    <label class="question_checkbox_label" for="false8">False</label>
+                    <p id="feedback8"></p>
+                </div>
+
+                <!-- Question number nine. -->
+                <div class="section9">
+                    <h2 class="question_title">&nbsp;Question 9</h2>
+                    <h3>&nbsp;Has your gambling caused any financial problems for you or your household?</h3>
+                    <b>&nbsp;</b>
+                    <input type="radio" id="true9" class="question_checkbox" name="radio9" value="true" required="required">
+                    <label class="question_checkbox_label" for="true9">True&emsp;&emsp;&emsp;</label>
+                    <input type="radio" id="false9" class="question_checkbox" name="radio9" value="false" required="required">
+                    <label class="question_checkbox_label" for="false9">False</label>
+                    <p id="feedback9"></p>
+                </div>
+
+                <!-- Submit button. -->
+                <div>
+                <figure class="text-center">
+                    <button class="btn btn-primary" type="submit">Turn In</button>
+                </figure>
+               </div>
+    </form>
+{% endblock %}
+
+{% block js %}
+<script>
+
+
+        // Testing.
+
+
+
+
+
+</script>
+{% endblock %}
+

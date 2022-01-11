@@ -1,0 +1,87 @@
+#questions {
+    height: 80px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+}
+
+#main-page-div {
+    height: 1000px;
+    width: auto;
+    background-image: url("backgroundpicture.gif");
+    background-repeat: repeat;
+    background-size: 2000px 1200px;
+    background-position: center;
+}
+
+.directioncontainer{
+    text-align: center;
+}
+
+.question_checkbox{
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+}
+
+.question_checkbox_label{
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 20px;
+}
+
+.question_title{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+    background-color: black;
+}
+
+.output_response{
+    text-align: center;
+}
+
+
+
+
+
+
+.badge {
+    font-size: 25px;
+    font-weight: 200
+}
+
+.badge i {
+    font-size: 20px;
+    font-weight: 200
+}
+
+.about-rating {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px
+}
+
+.total-ratings {
+    font-size: 12px
+}
+
+.bg-custom {
+    background-color: #b7dd29 !important
+}
+
+.progress {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

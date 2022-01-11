@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    High
+{% endblock %}
+
+{% block main %}
+<div class="directioncontainer">
+     <!-- Outputs text feedback about user's condition -->
+    <h3>Results: Unhealthy</h3>
+    <h6>You are exhibiting unhealthy behavior. Continuing to practice this behavior will begin to provoke negative outcomes.</h6>
+</div>
+
+<hr>
+ <!-- Outputs a text for resources, due to the user exhibiting unhealthy behavior -->
+<div class="directioncontainer">
+    <h6>Please refer to our <a href="/resources">resources</a> page to acquire help in changing your tendencies:</h6>
+</div>
+
+<div class="container mt-5">
+    <div class="card" style="border-color: black;">
+        <div class="row no-gutters">
+            <div class="col-md-4 border-right">
+                 <!-- Outputs rating -->
+                <div class="ratings text-center p-4 py-5"> <span class="badge bg-danger">{{ person_data_number }} / 9 <i class="fa fa-star-o"></i></span> <span class="d-block about-rating">High Tendency</span> <span class="d-block total-ratings"></span> </div>
+            </div>
+             <!-- Outputs scale -->
+            <div class="col-md-8">
+                <div class="rating-progress-bars p-3">
+                    <div class="progress-1 align-items-center">
+                        <div class="progress" style="height: 5.5rem">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: {{ percent }};" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"> {{ percent }} </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Statistics
+{% endblock %}
+
+{% block main %}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="row no-gutters">
+            <div class="col-md-4 border-right">
+                <div class="ratings text-center p-4 py-5"> <span class="badge bg-success">{{ person_data_number }} / 9 <i class="fa fa-star-o"></i></span> <span class="d-block about-rating">VERY GOOD</span> <span class="d-block total-ratings"></span> </div>
+            </div>
+            <div class="col-md-8">
+                <div class="rating-progress-bars p-3">
+                    <div class="progress-1 align-items-center">
+                        <div class="progress" style="height: 5.5rem;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: {{ percent }};" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"> {{ percent }} </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script>
+        // Testing.
+</script>
+{% endblock %}

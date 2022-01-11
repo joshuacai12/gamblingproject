@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Medium
+{% endblock %}
+
+{% block main %}
+<!-- Outputs text feedback about user's condition -->
+<div class="directioncontainer">
+    <h3>Results: Moderately Unhealthy</h3>
+    <h6>You are exhibiting moderately unhealthy behavior. Continuing to practice this behavior will likely begin to provoke negative outcomes.</h6>
+</div>
+
+<hr>
+
+<div class="container mt-5">
+    <div class="card" style="border-color: black;">
+        <div class="row no-gutters">
+            <div class="col-md-4 border-right">
+                <!-- Outputs rating -->
+                <div class="ratings text-center p-4 py-5"> <span class="badge bg-warning">{{ person_data_number }} / 9 <i class="fa fa-star-o"></i></span> <span class="d-block about-rating">Moderate Tendency</span> <span class="d-block total-ratings"></span> </div>
+            </div>
+             <!-- Outputs scale -->
+            <div class="col-md-8">
+                <div class="rating-progress-bars p-3">
+                    <div class="progress-1 align-items-center">
+                        <div class="progress" style="height: 5.5rem;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: {{ percent }};" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"> {{ percent }} </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
